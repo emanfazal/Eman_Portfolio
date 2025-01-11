@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emaan Fazal - Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'bounce-slow': 'bounce-slow 5s ease-in-out infinite',
+                        'fade-in': 'fade-in 1s ease-out',
+                        'slide-up': 'slide-up 0.5s ease-out',
+                        'slide-in': 'slide-in 0.5s ease-out',
+                        'scale-in': 'scale-in 0.5s ease-out',
+                    },
+                    keyframes: {
+                        'bounce-slow': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'fade-in': {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        'slide-up': {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        'slide-in': {
+                            '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        'scale-in': {
+                            '0%': { transform: 'scale(0.9)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-[#0B1120] text-white">
+    <!-- Include the navbar, sidebar, and profile menu -->
+    <div id="menu-container"></div>
+
+    <div class="md:ml-16">
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 md:px-6 py-20">
+            <div class="flex items-center justify-center mb-12 animate-fade-in">
+                <div class="text-4xl md:text-6xl text-white">
+                    My Projects
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                <!-- Project Cards -->
+               <!-- Project 1 -->
+<div class="relative w-full max-w-[20rem] animate-slide-up h-full">
+    <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-blue-600 rounded-3xl blur-lg opacity-90"></div>
+    <div class="relative p-[4px] rounded-3xl bg-gradient-to-r from-pink-500 to-blue-500 shadow-neon h-full">
+        <div class="relative bg-[#0B1120] p-4 md:p-6 rounded-3xl h-full flex flex-col">
+            <h3 class="text-xl font-semibold mb-2">Groceries App</h3>
+            <p class="text-gray-400 mb-4">Built a feature-rich app using Firebase and MVC for smooth shopping experiences, offering sleek UI and efficient local storage support.</p>
+            <a href="https://github.com/emanfazal/GroceryApp.git" class="text-pink-500 hover:text-blue-500 transition-colors mt-auto">View Project</a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 2 -->
+<div class="relative w-full max-w-[20rem] animate-slide-up h-full">
+    <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-blue-600 rounded-3xl blur-lg opacity-90"></div>
+    <div class="relative p-[4px] rounded-3xl bg-gradient-to-r from-pink-500 to-blue-500 shadow-neon h-full">
+        <div class="relative bg-[#0B1120] p-4 md:p-6 rounded-3xl h-full flex flex-col">
+            <h3 class="text-xl font-semibold mb-2">Quran App</h3>
+            <p class="text-gray-400 mb-4">Designed with Flutter and APIs, the app delivers Quranic verses and resources with a fully adaptive and responsive design for all devices.</p>
+            <a href="https://github.com/emanfazal/Quran_app.git" class="text-pink-500 hover:text-blue-500 transition-colors mt-auto">View Project</a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 3 -->
+<div class="relative w-full max-w-[20rem] animate-slide-up h-full">
+    <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-blue-600 rounded-3xl blur-lg opacity-90"></div>
+    <div class="relative p-[4px] rounded-3xl bg-gradient-to-r from-pink-500 to-blue-500 shadow-neon h-full">
+        <div class="relative bg-[#0B1120] p-4 md:p-6 rounded-3xl h-full flex flex-col">
+            <h3 class="text-xl font-semibold mb-2">Brogam Sports App</h3>
+            <p class="text-gray-400 mb-4">Built for sports event management, this app simplifies team registrations, schedules, and results with Firebase and a robust architecture.</p>
+            <a href="https://github.com/emanfazal/Brogam_SportsManagement_app.git" class="text-pink-500 hover:text-blue-500 transition-colors mt-auto">View Project</a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 4 -->
+<div class="relative w-full max-w-[20rem] animate-slide-up h-full">
+    <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-blue-600 rounded-3xl blur-lg opacity-90"></div>
+    <div class="relative p-[4px] rounded-3xl bg-gradient-to-r from-pink-500 to-blue-500 shadow-neon h-full">
+        <div class="relative bg-[#0B1120] p-4 md:p-6 rounded-3xl h-full flex flex-col">
+            <h3 class="text-xl font-semibold mb-2">World News App</h3>
+            <p class="text-gray-400 mb-4">Developed a news platform using APIs and Firebase to fetch and deliver real-time news with GetX state management and a clean UI design.</p>
+            <a href="https://github.com/emanfazal/WorldNewsApp.git" class="text-pink-500 hover:text-blue-500 transition-colors mt-auto">View Project</a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 5 -->
+<div class="relative w-full max-w-[20rem] animate-slide-up h-full">
+    <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-blue-600 rounded-3xl blur-lg opacity-90"></div>
+    <div class="relative p-[4px] rounded-3xl bg-gradient-to-r from-pink-500 to-blue-500 shadow-neon h-full">
+        <div class="relative bg-[#0B1120] p-4 md:p-6 rounded-3xl h-full flex flex-col">
+            <h3 class="text-xl font-semibold mb-2">Image Tracking App</h3>
+            <p class="text-gray-400 mb-4">A location tracking app built with Google Maps API and cloud storage, offering seamless real-time image tracking functionalities.</p>
+            <a href="https://github.com/emanfazal/Image_tracking_app.git" class="text-pink-500 hover:text-blue-500 transition-colors mt-auto">View Project</a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 6 -->
+<div class="relative w-full max-w-[20rem] animate-slide-up h-full">
+    <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-blue-600 rounded-3xl blur-lg opacity-90"></div>
+    <div class="relative p-[4px] rounded-3xl bg-gradient-to-r from-pink-500 to-blue-500 shadow-neon h-full">
+        <div class="relative bg-[#0B1120] p-4 md:p-6 rounded-3xl h-full flex flex-col">
+            <h3 class="text-xl font-semibold mb-2">AI Chatbot</h3>
+            <p class="text-gray-400 mb-4">Developed an intelligent chatbot app using Flutter, GetX, and ChatGPT API for dynamic and engaging conversational interactions.</p>
+            <a href="#" class="text-pink-500 hover:text-blue-500 transition-colors mt-auto">View Project</a>
+        </div>
+    </div>
+</div>
+
+<!-- Project 7 -->
+<div class="relative w-full max-w-[20rem] animate-slide-up h-full">
+    <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-blue-600 rounded-3xl blur-lg opacity-90"></div>
+    <div class="relative p-[4px] rounded-3xl bg-gradient-to-r from-pink-500 to-blue-500 shadow-neon h-full">
+        <div class="relative bg-[#0B1120] p-4 md:p-6 rounded-3xl h-full flex flex-col">
+            <h3 class="text-xl font-semibold mb-2">To-Do App</h3>
+            <p class="text-gray-400 mb-4">Created a task manager with Firestore integration for adding, editing, and managing tasks across multiple devices in real time.</p>
+            <a href="https://github.com/emanfazal/Todoapp.git" class="text-pink-500 hover:text-blue-500 transition-colors mt-auto">View Project</a>
+        </div>
+    </div>
+</div>
+
+                <!-- Project 2 -->
+                <!-- <div class="relative w-full max-w-[20rem] animate-slide-up">
+                    <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-blue-600 rounded-3xl blur-lg opacity-90"></div>
+                    <div class="relative p-[4px] rounded-3xl bg-gradient-to-r from-pink-500 to-blue-500 shadow-neon">
+                        <div class="relative bg-[#0B1120] p-4 md:p-6 rounded-3xl">
+                            <h3 class="text-xl font-semibold mb-2">Grocery App</h3>
+                            <p class="text-gray-400 mb-4">This project is an amazing Flutter app with a sleek UI and great functionality.</p>
+                            <a href="#" class="text-pink-500 hover:text-blue-500 transition-colors">View Project</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Project 3 -->
+              
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script>
+        // Load the menu HTML
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

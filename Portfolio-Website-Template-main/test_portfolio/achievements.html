@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Emaan Fazal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'bounce-slow': 'bounce-slow 5s ease-in-out infinite',
+                        'fade-in': 'fade-in 1s ease-out',
+                        'slide-up': 'slide-up 0.5s ease-out',
+                        'slide-in': 'slide-in 0.5s ease-out',
+                        'scale-in': 'scale-in 0.5s ease-out',
+                    },
+                    keyframes: {
+                        'bounce-slow': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' },
+                        },
+                        'fade-in': {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        'slide-up': {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        'slide-in': {
+                            '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        'scale-in': {
+                            '0%': { transform: 'scale(0.9)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-[#0B1120] text-white mb-4">
+    <!-- Include the navbar, sidebar, and profile menu -->
+    <div id="menu-container"></div>
+
+    <div class="md:ml-16">
+        <main class="container mx-auto px-4 md:px-6 mt-20">
+            <!-- Achievements Content -->
+            <div class="max-w-4xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-12 animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Achievements</h1>
+                    <div class="h-1 w-20 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto"></div>
+                </div>
+
+                <!-- Key Metrics Section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                    <div class="p-6 rounded-xl bg-[#0D1222] border border-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1 animate-scale-in text-center">
+                        <div class="text-4xl font-bold bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent mb-2">10+</div>
+                        <div class="text-gray-400">Projects Completed</div>
+                    </div>
+                    <div class="p-6 rounded-xl bg-[#0D1222] border border-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1 animate-scale-in text-center">
+                        <div class="text-4xl font-bold bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent mb-2">10+</div>
+                        <div class="text-gray-400">Apps Developed</div>
+                    </div>
+                    <div class="p-6 rounded-xl bg-[#0D1222] border border-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1 animate-scale-in text-center">
+                        <div class="text-4xl font-bold bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent mb-2">15+</div>
+                        <div class="text-gray-400">Professional Certifications</div>
+                    </div>
+                </div>
+
+                <!-- Notable Projects Section -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold mb-8 text-center animate-fade-in">Notable Projects</h2>
+                    <div class="space-y-6">
+                        <div class="p-6 rounded-xl bg-[#0D1222] border border-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1 animate-slide-up">
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <div class="md:w-1/4">
+                                    <div class="rounded-lg bg-gradient-to-r from-pink-500 to-blue-500 p-1">
+                                        <img src="testimages/Grocery App.png" alt="E-commerce App" class="rounded-lg w-full">
+                                    </div>
+                                </div>
+                                <div class="md:w-3/4">
+                                    <h3 class="text-xl font-bold bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent mb-2">E-commerce Mobile App</h3>
+                                    <p class="text-gray-400 mb-4">Developed a full-featured e-commerce mobile application with real-time inventory management and secure payment integration.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 rounded-full bg-pink-500/10 text-pink-500 text-sm">Flutter</span>
+                                        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-500 text-sm">Firebase</span>
+                                        <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-500 text-sm">Google Maps</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 rounded-xl bg-[#0D1222] border border-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1 animate-slide-up">
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <div class="md:w-1/4">
+                                    <div class="rounded-lg bg-gradient-to-r from-pink-500 to-blue-500 p-1">
+                                        <img src="testimages/SportsManagementApp.png" alt="Brogam Sports Management App" class="rounded-lg w-full">
+                                    </div>
+                                </div>
+                                <div class="md:w-3/4">
+                                    <h3 class="text-xl font-bold bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent mb-2">Brogam Sports Management App</h3>
+                                    <p class="text-gray-400 mb-4">Developed a versatile event management application tailored for sports organizations to plan, schedule, and coordinate tournaments, matches, and team events. The app provides tools for real-time updates, venue management, and seamless participant coordination to ensure successful event execution.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 rounded-full bg-pink-500/10 text-pink-500 text-sm">Google Maps</span>
+                                        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-500 text-sm">Firebase</span>
+                                        <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-500 text-sm">Flutter</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- ------ -->
+                        <div class="p-6 rounded-xl bg-[#0D1222] border border-white/10 hover:border-white/20 transition-all duration-300 transform hover:-translate-y-1 animate-slide-up">
+                            <div class="flex flex-col md:flex-row gap-4">
+                                <div class="md:w-1/4">
+                                    <div class="rounded-lg bg-gradient-to-r from-pink-500 to-blue-500 p-1">
+                                        <img src="testimages/TodoApp.png" alt="Todo Task Tracker App" class="rounded-lg w-full">
+                                    </div>
+                                </div>
+                                <div class="md:w-3/4">
+                                    <h3 class="text-xl font-bold bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent mb-2">Todo Task Tracker App</h3>
+                                    <p class="text-gray-400 mb-4">Designed and developed a task management application that helps users organize their daily activities, set reminders, and track progress seamlessly. The app features task prioritization, scheduling, and notification functionality for improved productivity.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1 rounded-full bg-pink-500/10 text-pink-500 text-sm">Flutter</span>
+                                        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-500 text-sm">Provider</span>
+                                        <span class="px-3 py-1 rounded-full bg-green-500/10 text-green-500 text-sm">Firestore</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script>
+        // Load the menu HTML
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

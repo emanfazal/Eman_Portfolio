@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emaan Fazal - Flutter Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'bounce-slow': 'bounce-slow 5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'bounce-slow': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-[#0B1120] text-white mb-4">
+    <!-- Include the navbar, sidebar, and profile menu -->
+    <div id="menu-container"></div>
+
+    <div class="md:ml-16">
+        <main class="container mx-auto px-4 md:px-6 mt-20">
+            <!-- Main content section -->
+            <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0">
+                <!-- Social Icons (Hidden on mobile) -->
+                <div class="hidden md:flex fixed left-24 top-1/2 -translate-y-1/2 flex-col space-y-6">
+                    <div class="rotate-180 vertical-text text-gray-500 mb-8 [writing-mode:vertical-rl] [text-orientation:mixed]">Follow Me</div>
+                    <a href="https://www.linkedin.com/in/eman-fazal-3b1200232" class="text-gray-500 hover:text-pink-500 transition-colors" target="_blank">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="https://github.com/emanfazal" class="text-gray-500 hover:text-pink-500 transition-colors" target="_blank">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <!-- <a href="#" class="text-gray-500 hover:text-pink-500 transition-colors">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a> -->
+                    <a href="https://www.instagram.com/emaan..02?igsh=YzljYTk1ODg3Zg==" class="text-gray-500 hover:text-pink-500 transition-colors" target="_blank">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+
+                <!-- Hero Content -->
+                <div class="flex-1 text-center md:text-left md:ml-20">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">My Personal Portfolio</h1>
+                    <div class="flex items-center justify-center md:justify-start space-x-2 text-3xl md:text-4xl mb-6">
+
+                        <!-- <span>Flutter</span>
+                        <span class="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent">Developer</span> -->
+                        <div id="typed-text-container">
+                            <span id="typed-text"></span>
+                        </div>
+
+                    </div>
+                    <p class="text-gray-400 mb-8 max-w-xl mx-auto md:mx-0">
+                        I'm passionate about creating excellent mobile apps, handling every step from concept to deployment with precision and creativity.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1DMmKPFyE2Ch4Sdw5WUaWAC7_ou6qpebD/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+                        <button class="relative group animate-bounce-slow">
+                            <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-blue-500 rounded-full blur opacity-50 group-hover:opacity-100 transition duration-300"></div>
+                            <div class="relative px-8 py-3 bg-[#0B1120] rounded-full flex items-center justify-center">
+                                Download CV
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </a>
+                    
+                </div>
+
+                <!-- Hero Image -->
+                <div class="flex-1 flex justify-center items-center mt-8 md:mt-0 bounce-slow">
+                    <!-- Main Wrapper with Custom Bounce Animation -->
+                    <div class="relative w-full max-w-[12rem] sm:max-w-[14rem] md:max-w-[15rem] lg:max-w-[16rem] animate-bounce-slow">
+                        <!-- Gradient Blur Effect -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-pink-600 to-blue-600 rounded-3xl blur-lg opacity-70"></div>
+                
+                        <!-- Gradient Border Container -->
+                        <div class="relative p-[4px] rounded-3xl bg-gradient-to-r from-pink-500 to-blue-500 shadow-neon">
+                            <!-- Inner Content Container -->
+                            <div class="relative bg-[#0B1120] p-4 md:p-6 rounded-3xl w-full h-48 sm:h-56 md:h-64 lg:h-72">
+                                <img 
+                                    src="./testimages/flutter.png" 
+                                    alt="Flutter mascot" 
+                                    class="w-auto h-full drop-shadow-[0_0_15px_rgba(14,165,233,0.3)] object-contain"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Mobile Social Icons (Only visible on mobile) -->
+            <div class="flex md:hidden justify-center space-x-6 mt-8">
+                <a href="https://www.linkedin.com/in/eman-fazal-3b1200232" class="text-gray-500 hover:text-pink-500 transition-colors" target="_blank">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="https://github.com/emanfazal" class="text-gray-500 hover:text-pink-500 transition-colors" target="_blank">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <!-- <a href="#" class="text-gray-500 hover:text-pink-500 transition-colors">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a> -->
+                <a href="https://www.instagram.com/emaan..02?igsh=YzljYTk1ODg3Zg==" class="text-gray-500 hover:text-pink-500 transition-colors" target="_blank">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script>
+        // Load the menu HTML
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+            });
+
+        // Typing effect
+        var typed = new Typed('#typed-text', {
+            strings: [
+                '<span style="color: white;">Flutter</span> <span style="background: linear-gradient(to right, #ec4899, #3b82f6); -webkit-background-clip: text; color: transparent;">Developer</span>',
+                // '<span style="color: white;">Mobile</span> <span style="background: linear-gradient(to right, #ec4899, #3b82f6); -webkit-background-clip: text; color: transparent;">Developer</span>',
+                '<span style="color: white;">App</span> <span style="background: linear-gradient(to right, #ec4899, #3b82f6); -webkit-background-clip: text; color: transparent;">Developer</span>',
+                '<span style="color: white;">Software</span> <span style="background: linear-gradient(to right, #ec4899, #3b82f6); -webkit-background-clip: text; color: transparent;">Engineer</span>'
+            ],
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000,
+            startDelay: 500,
+            loop: true,
+            showCursor: true,
+        });
+    </script>
+</body>
+</html>
